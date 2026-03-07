@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index">
+    <meta name="description" content="Mariage Isabelle & Teddy">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Mariage Isabelle & Teddy</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+    <div id="logo"><a href="index.html"><img src="img/Olivrings.png" alt="logo Isa & Ted"></a></div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <nav>
+        <ul>
+            <li>
+                <i class="fa-solid fa-circle-info"></i>
+                <a href="#infos">Infos</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-envelope-open"></i>
+                <a href="#reponse">Réponse</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-hotel"></i>
+                <a href="hebergement.html">Hébergements</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-camera"></i>
+                <a href="galerie.html">Galerie</a>
+            </li>
+            <!-- <li>
+                <i class="fa-solid fa-box-archive"></i>
+                <a href="archive.html">Archive</a>
+            </li> -->
+        </ul>
+    </nav>
+
+    <header>
+        <section id="accueil">
+            <h1>Isabelle Petit & Teddy Jullian</h1>
+            <p id="presentation">ont l'immense plaisir de vous faire part de leur mariage le 26 septembre 2026 <br></p>
+            <div class="btn-contact active-btn">
+                <a href="#reponse" data-id="contact" class="cta">
+                    <span>Réponse</span>
+                </a>
+            </div>
+        </section>
+    </header>
+
+    <!-- Contenu -->
+    <div class="container">
+        <section id="infos">
+            <div id="info">
+                <h2>Infos pratiques</h2>
+                <p></p>
+            </div>
+            <h2>Programme de la journée</h2>                
+                <div class="timeline">
+                    <div class="event">
+                        <div class="train-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="time">15h</div>
+                        <div class="description">Cérémonie civile à la mairie de La-Fare-les-Oliviers</div>
+                        <a target="_blank" href="https://maps.app.goo.gl/PAp8VPT9B3jN38tT8" rel="noopener noreferrer" class="description">Mairie de La Fare-les-Oliviers</a>
+                    </div>
+                    <div class="event">
+                        <div class="train-icon">
+                            <i class="fa-solid fa-wine-glass-empty"></i>
+                        </div>
+                        <div class="time">17h</div>
+                        <div class="description">Réception au Château Saint-Hilaire</div>
+                    </div>
+                </div>
+                
+            <div class="lieu">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Localisation du Château Saint-Hilaire :</h4>
+                <p class="contact-text">Coudoux, 13111</p>
+                <div class="right-contact">
+                    <div id="localisation">
+                        <a target="_blank" href="https://maps.app.goo.gl/UANrt4FuZWZycTWc6" rel="noopener noreferrer" class="adress_recept">Plan itinéraire</a>
+                        <img id="castle" src="img/castle.png" alt="image du Château Saint-Hilaire">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reponse">
+            <h2>Réponse</h2>
+                <h3>Réponse attendue avant le 01/07/2026</h3>
+                    <p id="accroche">Confirmez-nous votre présence en indiquant le nombre d'enfants présents</p>
+                    <div class="contact-info">
+                        <p class="contact-text">
+                            <form action="https://formsubmit.co/isabelle2petit@gmail.com" method="POST" enctype="multipart/form-data">
+                                <div class="input-control info">
+                                    <input type="hidden" name="_subject" value="Un invité a répondu!">
+                                    <input type="text" name="nom" required placeholder="Nom">
+                                    <input type="text" name="prénom" required placeholder="Prénom">
+                                </div>
+                                <div class="input-control">
+                                    <input type="number" name="Nombre-invité" min="0" required placeholder="Combien serez-vous?">
+                                    <input type="number" name="nombre-enfant" min="0" required placeholder="Dont nombre d'enfants">
+                                </div>
+                                <div class="input-control">
+                                    <textarea name="message" id="msg" cols="15" rows="8" placeholder="Préciser âge des enfants, vos intolérances alimentaires ou un petit mot..."></textarea>
+                                </div>
+                                <div class="submit-btn">
+                                    <a href="#reponse" class="main-btn">
+                                        <input type="hidden" name="_next" value="https://saboodev.github.io/wedding/">
+                                        <input type="hidden" name="_template" value="basic">
+                                        <input type="hidden" name="_captcha" value="false">
+                                        <button type="submit" value="submit" class="btn btn-primary animated-link">Envoyer</button>                                
+                                    </a>
+                                </div>
+                            </form>
+                        </p>
+                    </div>
+        </section>      
+    </div>
+
+    <footer>
+        <p id="footer-text">© Site conçu avec ❤️ par Saboo </p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

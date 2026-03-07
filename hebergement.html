@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index">
+    <meta name="description" content="Mariage Isabelle & Teddy">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariage Isabelle & Teddy</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Italiana&family=Italianno&family=Lugrasimo&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>    
+    <div id="logo"><a href="index.html"><img src="img/olivier.png" alt="logo Isa & Ted">"></a></div>
+    <div id="rings"><img src="img/rings.png" alt="golden rings"></div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <nav>
+        <ul>
+            <li>
+                <i class="fa-solid fa-circle-info"></i>
+                <a href="index.html">Infos</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-envelope-open"></i>
+                <a href="index.html">Réponse</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-hotel"></i>
+                <a href="hebergement.html">Hébergements</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-camera"></i>
+                <a href="galerie.html">Galerie</a>
+            </li>
+            <!-- <li>
+                <i class="fa-solid fa-box-archive"></i>
+                <a href="archive.html">Archive</a>
+            </li> -->
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="hebergement">
+            <h2>Hébergements à proximité</h2>
+                <p>Voici une liste non exhaustive d'hôtels à proximité, bien entendu vous êtes libres de choisir un autre endroit.</p>
+                <ul>
+                    <li>Location Sous les Platanes Provence Appart Hôtel : <a href="https://www.google.com/maps/place/Location+Sous+Les+Platanes+Provence+Appart+H%C3%B4tel/@43.5561683,5.2344597,13z/data=!4m20!1m9!2m8!1zSMO0dGVscw!3m6!1zSMO0dGVscw!2sCh%C3%A2teau+Saint+Hilaire+-+Wine+%26+Events+-+Coudoux+-+Vignoble+d'Aix+en+Provence,+RD+19+Route+d'Aix,+13111+Coudoux!3s0x47fd5e4aba9adbcf:0xc06f4edf17f41ac3!4m2!1d5.2603507!2d43.5570957!3m9!1s0x12c9f1dc29247e83:0x37384e1545823ec7!5m2!4m1!1i2!8m2!3d43.5223319!4d5.2540216!15sCgdIw7R0ZWxzkgEFaG90ZWyqATwQASoLIgdow7R0ZWxzKAQyHhABIhrtZU_iXS60tkjc7w9FVkq-JOrKxiF63TxsUzILEAIiB2jDtHRlbHPgAQA!16s%2Fg%2F11kpfb_1yp?entry=ttu&g_ep=EgoyMDI2MDMwNC4xIKXMDSoASAFQAw%3D%3D">Par ici !</a></li>
+                    <li>Clos la Verdière : <a href="https://www.google.com/maps/place/Clos+la+Verdi%C3%A8re/@43.5561683,5.2344597,13z/data=!4m20!1m9!2m8!1zSMO0dGVscw!3m6!1zSMO0dGVscw!2sCh%C3%A2teau+Saint+Hilaire+-+Wine+%26+Events+-+Coudoux+-+Vignoble+d'Aix+en+Provence,+RD+19+Route+d'Aix,+13111+Coudoux!3s0x47fd5e4aba9adbcf:0xc06f4edf17f41ac3!4m2!1d5.2603507!2d43.5570957!3m9!1s0x12c9efe3a846cda3:0x1eff42b61a3651df!5m2!4m1!1i2!8m2!3d43.5159984!4d5.2319147!15sCgdIw7R0ZWxzkgEFaG90ZWyqATwQASoLIgdow7R0ZWxzKAQyHhABIhrtZU_iXS60tkjc7w9FVkq-JOrKxiF63TxsUzILEAIiB2jDtHRlbHPgAQA!16s%2Fg%2F1trl7bdq?entry=ttu&g_ep=EgoyMDI2MDMwNC4xIKXMDSoASAFQAw%3D%3D">Là ...</a></li>
+                    <li>Bastide 7 : <a href="https://www.google.com/maps/place/BASTIDE+7/@43.5496368,5.1088572,13z/data=!4m20!1m9!2m8!1zSMO0dGVscw!3m6!1zSMO0dGVscw!2sCh%C3%A2teau+Saint+Hilaire+-+Wine+%26+Events+-+Coudoux+-+Vignoble+d'Aix+en+Provence,+RD+19+Route+d'Aix,+13111+Coudoux!3s0x47fd5e4aba9adbcf:0xc06f4edf17f41ac3!4m2!1d5.2603507!2d43.5570957!3m9!1s0x12c9fb207389fc67:0x43459157b35e3912!5m2!4m1!1i2!8m2!3d43.5496496!4d5.1850538!15sCgdIw7R0ZWxzkgEOaW5kb29yX2xvZGdpbmeqATwQASoLIgdow7R0ZWxzKAQyHhABIhrtZU_iXS60tkjc7w9FVkq-JOrKxiF63TxsUzILEAIiB2jDtHRlbHPgAQA!16s%2Fg%2F11jrq_3wnn?entry=ttu&g_ep=EgoyMDI2MDMwNC4xIKXMDSoASAFQAw%3D%3D">... Par là...</a></li>
+                    <li>Autres hôtels : <a href="https://www.google.com/maps/search/H%C3%B4tels/@43.5299994,5.220146,12.54z/data=!4m15!2m14!3m6!1zSMO0dGVscw!2sCh%C3%A2teau+Saint+Hilaire+-+Wine+%26+Events+-+Coudoux+-+Vignoble+d'Aix+en+Provence,+RD+19+Route+d'Aix,+13111+Coudoux!3s0x47fd5e4aba9adbcf:0xc06f4edf17f41ac3!4m2!1d5.2603507!2d43.5570957!5m5!5m3!1s2026-09-26!4m1!1i2!9i228!6e3?entry=ttu&g_ep=EgoyMDI2MDMwNC4xIKXMDSoASAFQAw%3D%3D">Encore par ici....</a></li>
+                    <li>Airbnb à proximité : <a href="https://www.airbnb.fr/s/Coudoux/homes?refinement_paths%5B%5D=%2Fhomes&date_picker_type=calendar&checkin=2026-09-26&checkout=2026-09-27&adults=2&children=2&search_type=user_map_move&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2026-04-01&monthly_length=3&monthly_end_date=2026-07-01&price_filter_input_type=2&price_filter_num_nights=1&channel=EXPLORE&place_id=ChIJQ7WWPovwyRIR11_4Wew9ol8&acp_id=34c6cbc2-71e6-4119-abf3-48129933aff5&query=Coudoux&search_mode=regular_search&ne_lat=43.594537054637094&ne_lng=5.356488361984958&sw_lat=43.47151717033443&sw_lng=5.17315694108936&zoom=12.556708492192397&zoom_level=12.556708492192397&search_by_map=true">... Ou quelque part ici !</a></li>
+                </ul>
+        </section>
+    </div>
+    
+    <footer>
+        <p id="footer-text">© Site conçu avec ❤️ par Saboo </p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
