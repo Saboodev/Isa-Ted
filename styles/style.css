@@ -79,13 +79,6 @@ border-top:none;
     margin: 0 auto;
 }
 
-#rings img {
-    width: 150px; /* Largeur de l'image */
-    height: auto; /* Hauteur automatique pour conserver le ratio */ 
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-}
 
 nav {
     text-align: center;
@@ -196,6 +189,13 @@ h3 {
 h4 {
     font-size: 30px;
     font-weight: 400;
+}
+
+.separateur{
+text-align:center;
+font-size:28px;
+color:#c9a227;
+margin:50px 0;
 }
 
 .container {
@@ -309,7 +309,7 @@ section {
     border-radius: 30px;
     img#castle {
         width: 100%;
-        border-radius: 30px;
+        border-radius: 20px;
         margin: 2rem auto;
     }
 }
@@ -464,6 +464,9 @@ footer {
         display: block;
     }
     
+    nav ul li a {
+        font-size: 19px;
+    }
 
     /* Centrer et redimensionner le texte dans la section */
     section h2, section p {
@@ -484,12 +487,32 @@ footer {
 
     /* Media query pour rendre le timeline responsive */
     .time {
-        width: auto;
+        /* width: auto; */
         text-align: left;
     }
 
     .timeline {
         align-items: center; /* Centrer les éléments horizontalement */
+    }
+
+    .lieu{
+    text-align:center;
+    }
+
+    .right-contact{
+        width:100%;
+    }
+
+    #localisation{
+        width:100%;
+        margin:0 auto;
+    }
+
+    #localisation img#castle{
+        width:100%;
+        max-width:none;
+        margin:20px auto;
+        display:block;
     }
 
     .event {
@@ -501,7 +524,6 @@ footer {
     .event .time {
         width: auto; /* Rétablir la largeur automatique */
         text-align: center; /* Centrer le texte de l'heure */
-        margin-right: 0; /* Supprimer la marge à droite */
     }
 
     .event .description {

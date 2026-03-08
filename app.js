@@ -5,7 +5,7 @@ function toggleMenu() {
 }
 
 //gestion compte-à-rebours
-const dateMariage = new Date("July 12, 2026 15:00:00").getTime();
+const dateMariage = new Date("September 26, 2026 15:00:00").getTime();
 
 const compteur = setInterval(function(){
 
