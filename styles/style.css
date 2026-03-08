@@ -169,6 +169,12 @@ form {
     margin: 0 auto; /* Centrage horizontal */
 }
 
+#countdown{
+font-size:30px;
+text-align:center;
+color:#c9a227;
+margin-top:40px;
+}
 
 h1 {
     font-family: 'Parisienne', cursive;
@@ -272,8 +278,8 @@ section {
     align-items: center;
     margin-bottom: 20px;
     .train-icon {
-        color: var(--text-primary-color);
-        background-color: var(--beige-2);
+        color: #f9f6f1;
+        background-color: var(--vert-eucalyptus);
         border-radius: 50%;
         left: -25px;
         width: 50px;
@@ -284,7 +290,7 @@ section {
         i { font-size: 1.3rem; }
     }
     .time {
-        width: 90px;
+        /* width: 90px; */
         text-align: right;
         margin-right: 20px;
         font-weight: 600;
@@ -371,10 +377,9 @@ input, textarea {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: rgba(75, 88, 58, 0.45); 
+        background-color: rgb(189 189 169 / 40%); 
         padding: 20px; 
         border-radius: 10px; 
-        font-family: "Italiana", cursive;
         font-size: 1.1rem;
         font-weight: 600;   
 }
